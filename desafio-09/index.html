@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Flag Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"/>
+</head>
+
+<body>
+
+    <main>
+
+        <section class="conversor">
+            <h2>Conversor de moedas</h2>
+
+            <div class="wrapper">
+                <div class="moeda-wrapper">
+                    <input type="text" class="valor" value="$1.000">
+
+                    <div class="lista-moedas">
+                        <div class="selecionado"><span class="fi fi-us fis"></span>  USD</div>
+
+                        <ul>
+                            <li><span class="fi fi-br fis"></span> BRL</li>
+                            <li><span class="fi fi-us fis"></span> USD</li>
+                            <li><span class="fi fi-eu fis"></span> EUR</li>
+                            <li><span class="fi fi-gb fis"></span> GPB</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="troca-lados">
+                    <img src="./assets/icon/switch-sides.svg" alt="Trocar moeda">
+                </div>
+                
+                <div class="moeda-wrapper">
+                    <input readonly type="text" class="valor" value="R$ 5.148,20">
+
+                    <div class="lista-moedas">
+                        <div class="selecionado"><span class="fi fi-br fis"></span>  BRL</div>
+
+                        <ul>
+                            <li><span class="fi fi-br fis"></span> BRL</li>
+                            <li><span class="fi fi-us fis"></span> USD</li>
+                            <li><span class="fi fi-eu fis"></span> EUR</li>
+                            <li><span class="fi fi-gb fis"></span> GPB</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cambio">
+            <h2>Taxa de câmbio</h2>
+
+            <div class="wrapper">
+                <div id="grafico"></div>
+                <div class="grafico-controles">
+                    <button>1D</button>
+                    <button>5D</button>
+                    <button class="active">1M</button>
+                    <button>1A</button>
+                    <button>5A</button>
+                    <button>Máx</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <!-- Apexcharts -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <!-- JavaScript -->
+    <script src="./script.js"></script>
+
+</body>
+
+</html>

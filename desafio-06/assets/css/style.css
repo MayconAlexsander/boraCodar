@@ -1,0 +1,153 @@
+/* [Font] Rubik (400-500) */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+
+
+/* ===== GLOBAL =============== */
+:root {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+	font-size: 1.6rem;
+    font-family: "Rubik", sans-serif;
+    letter-spacing: -0.02em;
+    background: linear-gradient(167.96deg, #8257E5 0%, #271A45 100%) no-repeat;
+}
+
+h1, strong {
+    font-weight: 500;
+}
+
+p {
+    color: rgba(0, 0, 0, 0.64);
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+}
+
+strong {
+    color: rgba(0, 0, 0, 0.88);
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+}
+
+
+
+/* Utils */
+.grid {
+    display: grid;
+}
+
+.column {
+    grid-auto-flow: column;
+}
+
+.text-right {
+    text-align: right;
+}
+
+
+
+/* ===== APP =============== */
+#boarding-pass {
+    max-width: 32.7rem;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: white;
+}
+
+footer {
+    width: 27rem;
+    margin: 2rem auto;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: white;
+    opacity: 0.64;
+}
+
+
+
+/* ===== MAIN =============== */
+#ticket {
+    margin-top: 2rem;
+}
+
+section {
+    background-color: white;
+    padding: 2.4rem 3.2rem;
+}
+
+.top {
+    border-radius: 2.4rem 2.4rem 0 0;
+    gap: 2.4rem;
+}
+
+.departure, .arrival {
+    width: 12.5rem;
+}
+
+.departure strong, .arrival strong {
+    font-size: 4rem;
+    line-height: 4.7rem;
+}
+
+.airplane {
+    align-self: center;
+}
+
+.top time {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.top time sup {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.7rem;
+}
+
+.bottom {
+    border-radius: 0 0 2.4rem 2.4rem;
+}
+
+.bottom .container {
+    align-items: center;
+    gap: .8rem;
+}
+
+dl.grid {
+    gap: 1.6rem;
+    min-width: 9.5rem;
+}
+
+dt time {
+    display: inline-block;
+    margin-top: .2rem;
+    padding: .4rem .8rem;
+    color: white;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    background-color: #633BBC;
+    border-radius: .8rem;
+}
+
+.bottom > p {
+    margin-top: 2.4rem;
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.qrcode.grid {
+    justify-items: center;
+}
