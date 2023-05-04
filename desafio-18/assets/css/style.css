@@ -15,11 +15,12 @@ body {
 }
 
 .wrapper {
-    /* border: 1px solid red; */
-
     display: flex;
+    justify-content: center;
     align-items: center;
+    position: relative;
     margin: auto;
+    gap: 22rem;
 }
 
 .card {
@@ -46,7 +47,7 @@ body {
 .card:first-child .nome-personagem,
 .card:last-child .nome-personagem {
     color: transparent;
-    -webkit-text-stroke: .1rem #312D74;
+    -webkit-text-stroke: .1rem #312D74; /* O -webkit-text-stroke não suporta a colocação do traço na parte externa do texto */
     font-size: 3.2rem;
     font-weight: 700;
     letter-spacing: .256rem;
@@ -57,7 +58,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 6rem;
-    position: relative;
+    position: absolute;
     width: 43.6rem;
     height: 60.8rem;
     padding: 4.8rem 0 0 4rem;
@@ -65,7 +66,7 @@ body {
     background-image: url("../img/bg-card-main.png");
 }
 
-.card-principal .character {
+.card-principal .personagem-img {
     position: absolute;
     right: 0; bottom: 0;
     width: 32.4rem;
