@@ -36,11 +36,11 @@ body {
 }
 
 .card:first-child {
-    background-image: url("../img/bg-card-left.png");
+    background-image: linear-gradient(rgba(0, 1, 14, .5), rgba(0, 1, 14, .5)), repeating-linear-gradient(135deg, rgba(14, 23, 101, .85) 0%, rgba(42, 17, 92, .85) 100%), url("../img/bg-card-left.png");
 }
 
 .card:last-child {
-    background-image: url("../img/bg-card-right.png");
+    background-image: linear-gradient(rgba(0, 1, 14, .5), rgba(0, 1, 14, .5)), repeating-linear-gradient(135deg, rgba(14, 23, 101, .85) 0%, rgba(42, 17, 92, .85) 100%), url("../img/bg-card-right.png");
 }
 
 .card:first-child .nome-personagem,
@@ -53,11 +53,66 @@ body {
     opacity: 90%;
 }
 
-.card.card-principal {
+.card-principal {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
     width: 43.6rem;
     height: 60.8rem;
+    padding: 4.8rem 4rem;
     border-radius: 2rem;
     background-image: url("../img/bg-card-main.png");
+}
+
+.card-principal .title,
+.card-principal .info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    font-size: 1.4rem;
+}
+
+.card-principal .title {
+    max-width: calc(26.3rem + 3.072rem)/* 3.072rem: efeito colateral do letter-spacing */;
+}
+
+.card-principal .nome-personagem p {
+    color: #ECE4EF;
+    font-size: 3.2rem;
+    font-weight: 700;
+    letter-spacing: .256rem;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 8px rgba(255, 255, 255, .4);
+}
+
+.card-principal .desc-personagem {
+    max-width: 26.3rem;
+}
+
+.card-principal .desc-personagem p {
+    color: #D8CEDE;
+    line-height: 1.76rem;
+}
+
+.card-principal .info {
+    max-width: 19.8rem;
+}
+
+.card-principal .detail {
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+}
+
+.card-principal .key {
+    color: #9C83A7;
+    line-height: 1.76rem;
+}
+
+.card-principal .value {
+    color: #D8CEDE;
+    font-weight: 700;
+    line-height: 1.82rem;
 }
 
 .inactive {
