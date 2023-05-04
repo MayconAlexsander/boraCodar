@@ -1,0 +1,65 @@
+/* [Font] Source Sans Pro (400-700) */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+
+:root {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    color: #D8CEDE;
+    background-image: linear-gradient(135deg, #030422 0%, #090114 100%);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.6rem;
+}
+
+.wrapper {
+    /* border: 1px solid red; */
+
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.card {
+    width: 34.8rem;
+    height: 48.64rem;
+    border-radius: 1.6rem;
+}
+
+.card:first-child,
+.card:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:first-child {
+    background-image: url("../img/bg-card-left.png");
+}
+
+.card:last-child {
+    background-image: url("../img/bg-card-right.png");
+}
+
+.card:first-child .nome-personagem,
+.card:last-child .nome-personagem {
+    color: transparent;
+    -webkit-text-stroke: .1rem #312D74;
+    font-size: 3.2rem;
+    font-weight: 700;
+    letter-spacing: .256rem;
+    opacity: 90%;
+}
+
+.card.card-principal {
+    width: 43.6rem;
+    height: 60.8rem;
+    border-radius: 2rem;
+    background-image: url("../img/bg-card-main.png");
+}
+
+.inactive {
+    display: none;
+}
