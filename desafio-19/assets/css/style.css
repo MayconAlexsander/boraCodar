@@ -1,5 +1,5 @@
-/* [Font] Inter (500-700) */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap');
+/* [Font] Inter (500-600-700) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap');
 
 :root {
     font-size: 62.5%; /* 1rem = 10px */
@@ -12,6 +12,7 @@ html {
 body {
     display: flex;
     height: 100vh;
+    color: #372D3B;
     background-color: #F5F5F5;
     font-size: 1.6rem;
     font-family: 'Inter', sans-serif;
@@ -19,8 +20,6 @@ body {
 }
 
 .widget {
-    border: 1px solid green;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -31,6 +30,7 @@ body {
     padding: 2.4rem 5.6rem;
     border-radius: 4rem;
     background-color: #FFF;
+    box-shadow: 0 .8rem 3.2rem rgba(0, 0, 0, 16%);
 }
 
 .widget header,
@@ -46,12 +46,19 @@ body {
     background-color: #E5D8EA;
 }
 
+.handle:hover {
+    cursor: grab;
+}
+
+.handle:active {
+    cursor: grabbing;
+    background-color: #864293;
+}
+
 header {
     display: flex;
     flex-direction: column;
     gap: .4rem;
-    color: #372D3B;
-
 }
 
 header h1 {
@@ -70,6 +77,62 @@ header strong {
     color: #864293;
 }
 
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .container {
+    display: flex;
+}
+
+main figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .rating {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    padding: .8rem 2.2rem;
+    border-radius: 999px;
+    color: #FBF8FC;
+    background-color: #372D3B;
+}
+
+main .rating p {
+    font-size: 1.961rem;
+    font-weight: 600;
+    line-height: 0;
+}
+
+main figcaption {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.178rem;
+}
+
+main .car-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.233rem;
+}
+
+main .placa {
+    font-size: 4.11rem;
+    font-weight: 700;
+    line-height: 4.973rem;
+}
+
+main .modelo {
+    font-size: 2.466rem;
+    font-weight: 500;
+    line-height: 2.984rem;
+}
+
 footer {
     display: flex;
     justify-content: space-between;
@@ -84,7 +147,7 @@ footer .message-box input {
 
 footer .message-box input {
     height: 6.4rem;
-    padding: 2.9rem 1.7rem 2.9rem 1.8rem;
+    padding: 1.7rem 2.9rem 1.8rem 2.9rem;
     border-radius: 2.4rem;
     color: #372D3B;
     background-color: #F5EDF7;
@@ -98,8 +161,25 @@ footer .message-box input::placeholder {
     font-size: 2.4rem;
 }
 
+footer .message-box input:focus,
+footer .message-box input:hover {
+    outline: 1px solid #864293;
+}
+
 footer .action-buttons {
     display: flex;
     gap: 4rem;
-    width: fit-content;
+}
+
+footer .action-buttons > div {
+    display: flex;
+}
+
+footer .action-buttons > div:hover {
+    cursor: pointer;
+    scale: 1.2;
+}
+
+footer .action-buttons > div:hover {
+    transition: scale .1s;
 }

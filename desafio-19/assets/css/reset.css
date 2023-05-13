@@ -54,7 +54,7 @@ a {
 	text-decoration: none;
 }
 
-button {
+button, input {
 	border: none;
 	outline: none;
 }
