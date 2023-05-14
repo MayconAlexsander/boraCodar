@@ -85,18 +85,23 @@ main {
 
 main .container {
     display: flex;
+    position: relative;
 }
 
 main figure {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    z-index: 1;
 }
 
 main .rating {
     display: flex;
     align-items: baseline;
     gap: 1rem;
+    position: absolute;
+    top: 11rem;
     padding: .8rem 2.2rem;
     border-radius: 999px;
     color: #FBF8FC;
@@ -113,6 +118,13 @@ main figcaption {
     font-size: 1.8rem;
     font-weight: 700;
     line-height: 2.178rem;
+    margin-top: 1.129rem;
+}
+
+main img.car {
+    position: absolute;
+    z-index: 0;
+    left: 9.2rem; top: 3rem;
 }
 
 main .car-info {
