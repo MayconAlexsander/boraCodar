@@ -15,7 +15,11 @@
 
 <body>
 
-    <div class="widget">
+    <div class="pop-up">
+        <span></span>
+    </div>
+
+    <div class="widget" draggable="true">
 
         <span class="handle"></span>
 
@@ -50,7 +54,13 @@
         
         <footer>
             <div class="message-box">
-                <input type="text" placeholder="Enviar mensagem para Boris...">
+                <input type="text" placeholder="Enviar mensagem para Boris..." oninput="checkEmptyInput()">
+
+                <button class="send" onclick="sendMessage();clearInput()">
+                    <svg width="40" height="39" viewBox="0 0 40 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.33797 1.10716L9.33803 1.10719L35.961 13.7188L35.9611 13.7188C40.6796 15.9523 40.6796 22.6671 35.9611 24.9005L35.961 24.9006L9.338 37.5145L9.55208 37.9663L9.33797 37.5145C4.95981 39.5891 0.00602535 36.0545 0.540182 31.2409L0.540186 31.2408L1.56076 22.0387H19.208C19.9318 22.0387 20.6259 21.7512 21.1377 21.2394C21.6495 20.7276 21.937 20.0335 21.937 19.3097C21.937 18.5859 21.6495 17.8918 21.1377 17.38C20.6259 16.8682 19.9318 16.5807 19.208 16.5807H1.56298L0.542414 7.38077L0.523186 7.20744C0.12311 2.48318 5.01221 -0.942635 9.33797 1.10716Z" stroke="#864293"/>
+                    </svg>
+                </button>
             </div>
 
             <div class="action-buttons">
