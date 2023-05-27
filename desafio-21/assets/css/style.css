@@ -1,0 +1,132 @@
+/* [Font] Inter (500-700) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap');
+
+:root {
+    font-size: 62.5%; /* 1rem = 10px */
+    --brand-color: #9333EA;
+    --brand-color-light: #A855F7;
+    --brand-color-lighter: #C084FC;
+    --text-color-primary: #F9FAFB;
+    --text-color-secondary: #E4E4E7;
+    --close-button-color: #A1A1AA;
+    --stroke-color: #3F3F46;
+    --surface-color: #18181B;
+}
+
+body {
+    color: var(--text-color-secondary);
+    background-color: #09090B;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+}
+
+.carrinho {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    right: 0;
+    height: 100vh;
+    background-color: var(--surface-color);
+    line-height: 2.4rem;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12.1rem;
+    padding: 2.4rem 1.6rem 2.4rem 3.2rem;
+    border-bottom: .1rem solid var(--stroke-color);
+    font-size: 2rem;
+}
+
+.card-header strong {
+    font-weight: 700;
+}
+
+.products-scroll {
+    padding: 3.2rem;
+    height: 100%;
+}
+
+.product-card {
+    display: flex;
+    gap: 2.4rem;
+}
+
+.product-card .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.product-card img {
+    width: 10.4rem;
+    border-radius: .8rem;
+}
+
+.price-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-card .price {
+    font-weight: 700;
+}
+
+.product-card .actions {
+    display: flex;
+    align-items: center;
+    gap: 1.183rem;
+}
+
+.product-card .actions svg {
+    padding: 12.07px;
+    border: .15rem solid var(--stroke-color);
+    border-radius: .8rem;
+}
+
+.product-card .actions svg:nth-child(3) {
+    border-color: var(--brand-color);
+}
+
+.bottom-fixed {
+    padding: 3.2rem;
+    border-top: .1rem solid var(--stroke-color);
+    font-size: 2rem;
+}
+
+.bottom-fixed div:first-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-fixed .price {
+    font-weight: 700;
+}
+
+.add-cupom {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: .8rem;
+    margin-block: 1.6rem 3.2rem;
+    color: var(--brand-color-light);
+    font-size: 1.6rem;
+}
+
+.bottom-fixed button {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 2rem 11.1rem;
+    border-radius: .8rem;
+    color: var(--text-color-primary);
+    background-color: var(--brand-color);
+    font-family: 'Inter', sans-serif;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+}
