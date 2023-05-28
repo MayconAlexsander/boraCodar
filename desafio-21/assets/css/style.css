@@ -184,6 +184,6 @@ body {
 }
 
 .bottom-fixed button:focus {
-    outline: .5rem solid var(--text-color-primary);
+    outline: .2rem solid var(--text-color-primary);
     outline-offset: .2rem;
 }
