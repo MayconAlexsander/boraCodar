@@ -1,3 +1,6 @@
+/* [Font] Heebo (400-700) */
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap');
+
 :root {
     font-size: 62.5%; /* 1rem = 10px */
 
@@ -16,11 +19,113 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #935FD3;
+    color: var(--gray-100);
+    background-image: linear-gradient(135deg, var(--gradient-from), var(--gradient-to));
+    font-family: 'Heebo', sans-serif;
     font-size: 1.6rem;
 }
 
+svg {
+    width: 2rem;
+}
+
+svg path {
+    fill: var(--gray-100);
+}
+
+hr {
+    width: 100%;
+    border: .1rem solid var(--gray-400);
+}
+
+.caret-right {
+    position: absolute;
+    right: 0;
+    width: 1.6rem;
+}
+
+.caret-right path {
+    fill: var(--gray-300);
+}
+
 .profile-settings {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    width: 37.5rem;
+    padding: 2.4rem 2.4rem 1.6rem 2.4rem;
     border-radius: 1.2rem;
     background-color: var(--gray-500);
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.user .avatar {
+    width: 4.8rem;
+    border-radius: .8rem;
+}
+
+.user .info {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+.user .name {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+}
+
+.user .email {
+    color: var(--gray-200);
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.options .title {
+    color: var(--gray-300);
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    letter-spacing: .048rem;
+    /*letter-spacing: 4%;*/ /* DOESN'T WORK */
+    text-transform: uppercase;
+}
+
+.account,
+.preferences,
+.privacy,
+.other {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.options ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.options ul li {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    position: relative;
+    height: 3.6rem;
+}
+
+.sign-out {
+    color: var(--red);
+}
+
+.sign-out svg path {
+    fill: var(--red);
 }
