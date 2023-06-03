@@ -1,0 +1,26 @@
+:root {
+    font-size: 62.5%; /* 1rem = 10px */
+
+    --gray-100: #38343D;
+    --gray-200: #686071;
+    --gray-300: #797085;
+    --gray-400: #F4EFFA;
+    --gray-500: #FDFCFE;
+    --gradient-from: #935FD3;
+    --gradient-to: #9245F1;
+    --red: #AA2222;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #935FD3;
+    font-size: 1.6rem;
+}
+
+.profile-settings {
+    border-radius: 1.2rem;
+    background-color: var(--gray-500);
+}
