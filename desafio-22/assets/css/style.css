@@ -27,7 +27,8 @@ body {
 
 hr {
     width: 100%;
-    border: .1rem solid var(--gray-400);
+    height: 0;
+    border: .5px solid var(--gray-400);
 }
 
 svg {
