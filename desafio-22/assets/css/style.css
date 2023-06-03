@@ -25,17 +25,17 @@ body {
     font-size: 1.6rem;
 }
 
+hr {
+    width: 100%;
+    border: .1rem solid var(--gray-400);
+}
+
 svg {
     width: 2rem;
 }
 
 svg path {
     fill: var(--gray-100);
-}
-
-hr {
-    width: 100%;
-    border: .1rem solid var(--gray-400);
 }
 
 .caret-right {
@@ -56,6 +56,7 @@ hr {
     padding: 2.4rem 2.4rem 1.6rem 2.4rem;
     border-radius: 1.2rem;
     background-color: var(--gray-500);
+    box-shadow: 0 0 5rem #1E1E1E1A;
 }
 
 .user {
@@ -83,6 +84,8 @@ hr {
 
 .user .email {
     color: var(--gray-200);
+    font-size: 1.4rem;
+    line-height: 1.8rem;
 }
 
 .options {
@@ -120,6 +123,10 @@ hr {
     gap: .8rem;
     position: relative;
     height: 3.6rem;
+}
+
+.options ul li span {
+    line-height: 2rem;
 }
 
 .sign-out {
