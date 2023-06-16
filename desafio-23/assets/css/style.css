@@ -1,0 +1,142 @@
+/* [Font] IBM Plex Sans (400-700) */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+/* [Font] Titillium Web (700) */
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
+
+:root {
+    font-size: 62.5%; /* 1rem = 10px */
+
+    /* Produto */
+    --purple-mid: #633BBC;
+    --purple-light: #8257E5;
+    /* Base */
+    --gray-100: #E1E1E6;
+    --gray-200: #8D8D99;
+    --gray-300: #7C7C8A;
+    --gray-400: #323238;
+    /* Feedback */
+    --success-color: #1D8841;
+}
+
+body {
+    height: 100vh; /* 👈 MUDAR DEPOIS */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+
+.app {
+    width: 59.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    border: .1rem solid var(--gray-100);
+    border-radius: .6rem;
+    padding: 3.2rem;
+    background-color: #FFF;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.steps .step {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .8rem;
+    padding: .8rem;
+    color: var(--gray-400);
+    font-weight: 700;
+}
+
+.steps .step span {
+    width: 2.8rem;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #FFF;
+    background-color: var(--purple-mid);
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+}
+
+/* Step disabled */
+.steps .step-2 span,
+.steps .step-3 span {
+    color: var(--gray-200);
+    background-color: var(--gray-100);
+}
+
+.steps .step-2 p,
+.steps .step-3 p {
+    color: var(--gray-200);
+}
+/*  */
+
+hr {
+    border: .05rem solid var(--gray-100);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+form input {
+    border: .1rem solid var(--gray-100);
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.inputs fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+.inputs label {
+    color: var(--gray-400);
+    font-weight: 700;
+}
+
+.inputs input {
+    height: 5.6rem;
+    padding: .8rem 1.6rem;
+    border-radius: .2rem;
+}
+
+.inputs input::placeholder {
+    color: var(--gray-200);
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.buttons button[type="submit"] {
+    padding: 1.6rem 3.2rem;
+    border-radius: .6rem;
+    color: #FFF;
+    background-color: var(--purple-mid);
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    text-transform: uppercase;
+}
