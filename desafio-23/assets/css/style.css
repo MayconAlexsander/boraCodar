@@ -19,7 +19,6 @@
 }
 
 body {
-    height: 100vh; /* 👈 MUDAR DEPOIS */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,6 +33,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 3.2rem;
+    margin-top: 8.2rem;
     border: .1rem solid var(--gray-100);
     border-radius: .6rem;
     padding: 3.2rem;
