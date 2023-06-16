@@ -13,13 +13,12 @@
 }
 
 .container {
-    /* border: 1px solid red; */
-    
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--gray-200);
+    font-weight: 700;
     text-transform: uppercase;
 }
 

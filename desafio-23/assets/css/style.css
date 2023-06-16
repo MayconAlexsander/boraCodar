@@ -28,6 +28,10 @@ body {
     line-height: 2.4rem;
 }
 
+a:active {
+    color: inherit;
+}
+
 .app {
     width: 59.2rem;
     display: flex;
@@ -131,6 +135,7 @@ form input, form textarea {
     padding: 1.5rem 3.2rem;
     border: .1rem solid var(--purple-mid);
     border-radius: .6rem;
+    color: var(--purple-mid);
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
