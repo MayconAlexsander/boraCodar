@@ -1,0 +1,13 @@
+/* STEP STATUS */
+/* Step disabled */
+.steps .step-2 span,
+.steps .step-3 span {
+    color: var(--gray-200);
+    background-color: var(--gray-100);
+}
+
+.steps .step-2 p,
+.steps .step-3 p {
+    color: var(--gray-200);
+}
+/*  */

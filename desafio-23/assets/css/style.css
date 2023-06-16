@@ -70,19 +70,6 @@ body {
     line-height: 2.1rem;
 }
 
-/* Step disabled */
-.steps .step-2 span,
-.steps .step-3 span {
-    color: var(--gray-200);
-    background-color: var(--gray-100);
-}
-
-.steps .step-2 p,
-.steps .step-3 p {
-    color: var(--gray-200);
-}
-/*  */
-
 hr {
     border: .05rem solid var(--gray-100);
 }
@@ -93,8 +80,9 @@ form {
     gap: 3.2rem;
 }
 
-form input {
+form input, form textarea {
     border: .1rem solid var(--gray-100);
+    resize: none;
 }
 
 .inputs {
@@ -114,19 +102,28 @@ form input {
     font-weight: 700;
 }
 
-.inputs input {
+.inputs input, .inputs textarea {
     height: 5.6rem;
     padding: .8rem 1.6rem;
     border-radius: .2rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1.6rem;
 }
 
-.inputs input::placeholder {
+.inputs textarea {
+    height: 8.2rem;
+}
+
+.inputs input::placeholder, .inputs textarea::placeholder {
     color: var(--gray-200);
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1.6rem;
 }
 
 .buttons {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .buttons button[type="submit"] {

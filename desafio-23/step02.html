@@ -6,11 +6,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário multi-step</title>
+    <title>Etapa 2 - Empresa</title>
     <!-- Reset -->
     <link rel="stylesheet" href="./assets/css/reset.css">
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/step02.css">
 </head>
 
 <body>
@@ -19,7 +20,18 @@
         
         <div class="steps">
             <div class="step step-1">
-                <span>1</span>
+                <span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_379_471)">
+                        <path d="M4.16663 9.99998L8.33329 14.1666L16.6666 5.83331" stroke="white" stroke-width="2" stroke-linecap="square"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_379_471">
+                        <rect width="20" height="20" fill="white"/>
+                        </clipPath>
+                        </defs>
+                    </svg>
+                </span>
                 <p>Contato</p>
             </div>
 
@@ -62,22 +74,23 @@
 
             <div class="inputs">
                 <fieldset>
-                    <label for="nome">Nome</label>
-                    <input type="text" name="nome" id="nome" placeholder="Como prefere ser chamado">
+                    <label for="empresa">Nome da empresa</label>
+                    <input type="text" name="empresa" id="empresa" placeholder="Qual é o nome da empresa">
                 </fieldset>
     
                 <fieldset>
-                    <label for="tel">Telefone</label>
-                    <input type="tel" name="tel" id="tel" placeholder="Digite seu número de WhatsApp">
+                    <label for="num_funcionarios">Número de funcionários</label>
+                    <input type="number" name="num_funcionarios" id="num_funcionarios" placeholder="Digite o número de colaboradores">
                 </fieldset>
                 
                 <fieldset>
-                    <label for="email">E-mail</label>
-                    <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+                    <label for="sobre_negocio">Sobre seu negócio</label>
+                    <textarea name="sobre_negocio" id="sobre_negocio" cols="30" rows="10" placeholder="Fale um pouco sobre seus produtos ou serviços"></textarea>
                 </fieldset>
             </div>
     
             <div class="buttons">
+                <a href="">Voltar</a>
                 <button type="submit">Continuar</button>
             </div>
         
