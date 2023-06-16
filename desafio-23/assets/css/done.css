@@ -1,0 +1,29 @@
+/* STEP STATUS */
+/* Step done */
+.steps .step-1 span, 
+.steps .step-2 span,
+.steps .step-3 span {
+    background-color: var(--success-color);
+}
+/*  */
+
+.app.done {
+    height: 39.2rem;
+    justify-content: space-between;
+}
+
+.container {
+    /* border: 1px solid red; */
+    
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--gray-200);
+    text-transform: uppercase;
+}
+
+.done .buttons a {
+    width: fit-content;
+    text-transform: none;
+}
