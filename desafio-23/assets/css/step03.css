@@ -1,0 +1,10 @@
+/* STEP STATUS */
+/* Step done */
+.steps .step-1 span, .steps .step-2 span {
+    background-color: var(--success-color);
+}
+/*  */
+
+.buttons {
+    justify-content: space-between;
+}

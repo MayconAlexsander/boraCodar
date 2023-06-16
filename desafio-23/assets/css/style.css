@@ -126,6 +126,16 @@ form input, form textarea {
     align-items: center;
 }
 
+.buttons a {
+    width: 15.8rem;
+    padding: 1.5rem 3.2rem;
+    border: .1rem solid var(--purple-mid);
+    border-radius: .6rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
 .buttons button[type="submit"] {
     padding: 1.6rem 3.2rem;
     border-radius: .6rem;
