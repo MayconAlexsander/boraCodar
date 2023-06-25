@@ -1,0 +1,73 @@
+/* [Font] Raleway (300) */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+:root {
+    font-size: 62.5%;
+
+    --bg-color: #151515;
+}
+
+body {
+    color: #FFF;
+    background-color: var(--bg-color);
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+}
+
+main {
+    /* border: 1px solid red; */
+
+    width: fit-content;
+    margin: auto;
+}
+
+main h1 {
+    margin-bottom: 9rem;
+    font-size: 3.2rem;
+    line-height: 3.8rem;
+    text-align: center;
+}
+
+.slide-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8.2rem;
+}
+
+.slide {
+    width: 32.1rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.slide input {
+    appearance: none;
+    width: 100%;
+    height: .5rem;
+    border-radius: 1.2rem;
+    background-color: #D9D9D9;
+}
+
+.slide input::-webkit-slider-thumb {
+    appearance: none;
+    width: 1.8rem;
+    aspect-ratio: 1;
+    border: .15rem solid #FFF;
+    border-radius: 50%;
+    background: var(--bg-color);
+    cursor: pointer;
+}
+
+.slide-color input {
+    background: linear-gradient(45deg, 
+    #FF0000, 
+    #FF8A00, 
+    #FFE600, 
+    #14FF00, 
+    #00A3FF, 
+    #0500FF, 
+    #AD00FF, 
+    #FF00C7, 
+    #FF0000);
+}
