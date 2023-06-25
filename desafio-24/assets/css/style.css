@@ -5,6 +5,7 @@
     font-size: 62.5%;
 
     --bg-color: #151515;
+    --slider-thumb-color: #F00;
 }
 
 body {
@@ -69,6 +70,10 @@ main h1 {
     border-radius: 50%;
     background: var(--bg-color);
     cursor: pointer;
+}
+
+.slide-color input::-webkit-slider-thumb {
+    background: var(--slider-thumb-color);
 }
 
 .slide-color input {
