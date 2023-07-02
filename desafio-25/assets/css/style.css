@@ -1,0 +1,142 @@
+/* [Font] Inter (400) */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+    font-size: 62.5%; /* 1rem = 10px */
+
+    --white-10: rgba(255, 255, 255, .1);
+    --white-20: rgba(255, 255, 255, .2);
+    --white-60: rgba(255, 255, 255, .6);
+    --white-80: rgba(255, 255, 255, .8);
+    --white-100: rgba(255, 255, 255);
+    --black-10: rgba(0, 0, 0, .1);
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.60) 100%), url("../img/bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    overflow: hidden;
+}
+
+button {
+    padding: .8rem;
+    border-radius: 999px;
+    background: none;
+}
+
+button:hover {
+    background-color: var(--white-20);
+    cursor: pointer;
+}
+
+.app {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+    animation: appear 400ms 500ms backwards;
+}
+
+.side-menu, nav {
+    background: var(--white-10);
+    box-shadow: 0 .8rem .4rem 0 rgba(0, 0, 0, 0.05), 0 .1rem .1rem 0 rgba(255, 255, 255, 0.30) inset, 0px -1px 1px 0px rgba(255, 255, 255, 0.10) inset;
+    backdrop-filter: blur(8px);
+}
+
+.side-menu {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 1.2rem;
+    border-radius: 999px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.4rem;
+}
+
+nav {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.4rem;
+    padding: .8rem 1.2rem;
+    border-radius: 999px;
+}
+
+.actions {
+    display: flex;
+    gap: 1.6rem;
+}
+
+.address-bar {
+    width: 44rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem;
+    border-radius: 999px;
+    background-color: var(--black-10);
+    box-shadow: 0 -1px 0 0 rgba(255, 255, 255, .1) inset, 0 1px 0 0 rgba(0, 0, 0, .2) inset;
+}
+
+.address-bar div {
+    display: flex;
+    gap: .4rem;
+}
+
+.address-bar p {
+    color: var(--white-80);
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+}
+
+.screen iframe {
+    width: 96rem;
+    height: 54rem;
+    border-radius: 3.2rem;
+}
+
+.interaction {
+    display: flex;
+    gap: 1.6rem;
+}
+
+.circle, .retangle {
+    height: .8rem;
+    background-color: var(--white-60);
+    backdrop-filter: blur(2px);
+}
+
+.circle {
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+
+.retangle {
+    width: 8.6rem;
+    border-radius: 999px;
+}
+
+@keyframes appear {
+    from {
+        scale: 2;
+        opacity: 0;
+    }
+
+    to {
+
+    }
+}
