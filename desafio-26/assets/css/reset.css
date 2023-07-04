@@ -38,6 +38,10 @@ a {
 	text-decoration: none;
 }
 
+ul, ol {
+	list-style: none;
+}
+
 button, input, hr {
 	margin: 0;
 	padding: 0;
