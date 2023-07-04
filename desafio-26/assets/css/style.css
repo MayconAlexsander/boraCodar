@@ -50,7 +50,6 @@ body {
 
 .interact {
     display: flex;
-    align-items: baseline;
     gap: 1.5rem;
     color: #9B6647;
 }
@@ -59,9 +58,22 @@ body {
     font-size: 3.5rem;
 }
 
+.controls {
+    /* border: 1px solid red; */
+
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.controls button {
+    display: flex;
+}
+
 .controls span {
     font-family: 'Source Sans 3', sans-serif;
     font-size: 4rem;
+    line-height: 0;
 }
 
 .frame-down {
