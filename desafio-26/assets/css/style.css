@@ -1,0 +1,97 @@
+/* Source Sans (400-700) / Source Serif (400-700) */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700&family=Source+Serif+4:wght@400;700&display=swap');
+
+:root {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background-color: #FEECE0;
+    font-size: 1.6rem;
+    /* font-family: 'Source Sans 3', sans-serif; */
+    font-family: 'Source Serif 4', serif;
+}
+
+.frame-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5.6rem;
+}
+
+.frame-up .info, .frame-up .info header {
+    display: flex;
+    flex-direction: column;
+}
+
+.frame-up .info {
+    gap: 3rem;
+}
+
+.frame-up .info header {
+    gap: 3.2rem;
+}
+
+.frame-up .title, .frame-up .desc {
+    color: #58190A;
+}
+
+.frame-up .title {
+    font-size: 7.2rem;
+    font-weight: 700;
+}
+
+.frame-up .desc {
+    font-size: 3.8rem;
+}
+
+.interact {
+    display: flex;
+    align-items: baseline;
+    gap: 1.5rem;
+    color: #9B6647;
+}
+
+.interact p {
+    font-size: 3.5rem;
+}
+
+.controls span {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 4rem;
+}
+
+.frame-down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6.4rem;
+    background-color: #9B6647;
+}
+
+.ingredientes, .modo-preparo {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+.frame-down .title {
+    display: flex;
+    gap: 1.1rem;
+    color: #FEECE0;
+    font-size: 3.8rem;
+    font-weight: 700;
+}
+
+.frame-down .info {
+    border: 1px solid red;
+
+    color: #FFF;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 2.8rem;
+    line-height: 3.5rem;
+    list-style-position: inside;
+}
