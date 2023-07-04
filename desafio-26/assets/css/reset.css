@@ -47,6 +47,7 @@ button, input, hr {
 	padding: 0;
 	border: none;
 	outline: none;
+	background: none;
 }
 
 iframe, img {
