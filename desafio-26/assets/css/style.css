@@ -87,11 +87,21 @@ body {
 }
 
 .frame-down .info {
-    border: 1px solid red;
-
     color: #FFF;
     font-family: 'Source Sans 3', sans-serif;
     font-size: 2.8rem;
     line-height: 3.5rem;
     list-style-position: inside;
+}
+
+.frame-down ul.info li:before {
+    content: "\2022\0020";
+}
+
+.frame-down ol.info li {
+    counter-increment: number; /* Incrementa o contador para números ordenados */
+}
+
+.frame-down ol.info li:before {
+    content: counter(number) ". "; /* Insere o número do item */
 }
